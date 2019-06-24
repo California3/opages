@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Lost in Space! 404</title>
+	<link href='http://fonts.useso.com/css?family=Bangers&amp;v2' rel='stylesheet' type='text/css' />	
+	<link rel="stylesheet" type="text/css" href="https://404.6zgm.com/styles/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://404.6zgm.com/styles/main.css" />	
+	
+   
+    
+</head>
+<body>
+
+
+<div id="container">
+
+	<div id="stage" class="stage">
+  
+		<div id="sky" class="stage"></div>
+  
+			<div id="meteor" class="stage">
+            
+             <div id="plane" class="stage"></div>
+             
+				<div id="clouds" class="stage"></div>
+    
+                <div id="box">		
+                    <!--Main text-->	
+                    <h1>Error 404</h1>
+                    <h2>The page you are looking for doesn't exist</h2>
+					<h2>你要找的页面已经不存在了，请尝试一下搜索功能吧！</h2>
+                    <!--./Main Text-->
+                    <!--Search bar-->
+                    <form id="fullsearch" name="fullsearch" method="post" action="http://www.6zgm.com/index.php?do=search">
+                    <input type="text" id="dosearch" class="tftextinput2" name="dosearch" size="70" maxlength="120" placeholder="输入关键词 .. "/><input type="submit" value=">" class="tfbutton2"/>
+                    </form>  
+                    <!--./Search bar-->
+                
+                    <!--Menu-->
+                        <ul id="menu">         
+                            <li><a href="#">返回首页</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">本站新闻</a></li>
+                            <li><a href="#">关于我们</a></li>
+                          
+                        </ul>
+                          <div class="tfclear"></div>
+                    <!--./Menu-->
+                </div><!--./box-->
+                </div><!--./Stage-->
+                </div><!--./Container-->
+           </div>
+
+<script src="https://404.6zgm.com/scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="https://404.6zgm.com/scripts/jquery.spritely.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		(function($) {
+			$(document).ready(function() {			
+				$('#hotb')
+					.sprite({fps: 20, no_of_frames: 1})
+					.spRandom({top: 50, bottom: 10, left: 5, right: 320})
+					$('#clouds').pan({fps: 30, speed: 0.4, dir: 'left', depth: 40});
+					$('#plane').pan({fps: 30, speed: 0.6, dir: 'right', depth: 30});		
+					$('#meteor').pan({fps: 30, speed: 3.6, dir: 'left', depth: 1});	
+			});
+		})(jQuery);	
+	</script>
+</body>
+</html>
